@@ -1,0 +1,167 @@
+body {
+  background-color: #dcf4ff;
+  margin: 0;
+}
+
+h1 {
+  color: rgb(10, 75, 136);
+}
+
+h2 {
+  color: rgb(10, 75, 136);
+}
+
+.titles {
+  text-align: center;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+p {
+  margin: 0 3em 0 3em;
+  font-family: "Lato", sans-serif;
+}
+
+#container {
+  background-image: url(images/bubbles_bg.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  border-top: rgb(10, 75, 136) solid 4px;
+  border-bottom: rgb(10, 75, 136) solid 4px;
+}
+
+#duck_button {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  border: transparent;
+  padding: 0;
+  display: block;
+  margin: 3em auto 0 auto;
+}
+
+.duck {
+  width: 100%;
+}
+
+@keyframes zoom_out {
+  0% {
+    transition: scale(0);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transition: scale(0);
+  }
+}
+
+.duck.animated {
+  transform-origin: center;
+  animation: zoom_out 0.15s;
+}
+
+#amount {
+  text-align: center;
+  color: aliceblue;
+  line-height: 2em;
+  background-color: rgba(10, 75, 136, 0.418);
+  margin: 3em 0 0 0;
+  overflow-x: scroll;
+}
+
+#clicks {
+  font-size: 2em;
+}
+
+p {
+  color: rgb(10, 75, 136);
+}
+
+#donate {
+  box-shadow: inset 0px 1px 0px 0px #dcecfb;
+  background: linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+  border-radius: 24px;
+  border: 1px solid #84bbf3;
+  display: block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 13px 54px;
+  text-decoration: none;
+  text-shadow: 1px 1px 0px #528ecc;
+  margin: 1em auto 2em auto;
+}
+#donate:hover {
+  background: linear-gradient(to bottom, #bdfeff 5%, #81d9ff 100%);
+  border-color: #84dfff;
+  text-shadow: #51b1ff;
+}
+#donate:active {
+  position: relative;
+  top: 1px;
+}
+
+.donation_form {
+  display: block;
+  margin: 3em auto 2em auto;
+  font-family: "Lato", sans-serif;
+  color: rgb(10, 75, 136);
+  width: 40%;
+}
+
+.donation_form fieldset {
+  border: 3px double rgb(10, 75, 136);
+}
+
+.donation_form input {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.donation_form input[type="submit"] {
+  box-shadow: inset 0px 1px 0px 0px #dcecfb;
+  background: linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+  border-radius: 24px;
+  border: 1px solid #84bbf3;
+  display: block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 25px;
+  text-decoration: none;
+  text-shadow: 1px 1px 0px #528ecc;
+  margin: 1em auto 2em auto;
+}
+
+.donation_form input[type="submit"]:hover {
+  background: linear-gradient(to bottom, #bdfeff 5%, #81d9ff 100%);
+  border-color: #84dfff;
+  text-shadow: #51b1ff;
+}
+
+.donation_form label {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.donation_form legend {
+  padding: 1em 10px 1em 10px;
+}
+
+.transform {
+  transition: all 2s ease;
+}
+
+.transform-active {
+  display: none;
+}
